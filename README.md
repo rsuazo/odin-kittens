@@ -20,5 +20,3 @@ This is a fast and straightforward project where you’ll set up a Rails app to 
 * Services (job queues, cache servers, search engines, etc.)
 
 * Deployment instructions
-
-* ...
