@@ -1,0 +1,13 @@
+
+<h1 style="text-align:center">Register a New Kitten!</h1>
+
+<body><br>
+
+  <h2>Kitten Details</h2><br>
+ 
+
+<%= render :partial => 'form' %><br><br>
+
+<%= link_to 'Home', kittens_path %><br><br>
+<%= link_to 'Back', kittens_path %><br><br>
+<%= link_to 'Delete', { action: :destroy, id: @kitten.id }, method: :delete %>

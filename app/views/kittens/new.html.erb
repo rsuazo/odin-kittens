@@ -1,0 +1,15 @@
+
+<h1 style="text-align:center">Register a New Kitten!</h1>
+<% flash.each do |type, msg| %>
+  <div>
+    <%= msg %>
+  </div>
+<% end %>
+<body><br>
+
+  <h2>Kitten Details</h2><br>
+ 
+
+<%= render :partial => 'form' %>
+
+<%= link_to 'Back', kittens_path %>

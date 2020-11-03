@@ -1,0 +1,32 @@
+
+<body><br>
+<% flash.each do |type, msg| %>
+  <div>
+    <%= msg %>
+  </div>
+<% end %>
+
+  <h2>Kitten Details</h2><br>
+
+      <table style='width:100%'>
+      <tr>
+        <th>Name</th>
+        <th>Age</th>
+        <th>Cuteness</th>
+        <th>Softness</th>
+      </tr>
+
+        <tr>
+        <td style='text-align: center'><%= @kitten.name %></td>
+        <td style='text-align: center'><%= @kitten.age %></td>
+        <td style='text-align: center'><%= @kitten.cuteness %></td>
+        <td style='text-align: center'><%= @kitten.softness %></td>
+        </tr>
+
+    </table>
+
+<%= link_to 'Home', kittens_path %><br><br>
+<%= link_to 'Back', edit_kitten_path %><br><br>
+<%= link_to 'Delete', { action: :destroy, id: @kitten.id }, method: :delete %>
+
+
